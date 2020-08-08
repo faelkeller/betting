@@ -39,6 +39,9 @@ rodada_game
 - rodada_id
 - game_id
 
+odds_sources
+- name
+
 game_odd_option
 - game_id
 - option_id
