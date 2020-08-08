@@ -1,0 +1,60 @@
+100 x 2,37 = 237
+
+100 x 3,10 = 310
+
+200 = 1,19
+
+200 = 1,55
+
+campeonato
+- name - Campeonato Brasileiro 2020
+
+times
+- name - Flamengo
+
+rodada
+- campeonato_id
+- name
+
+campeonato_times
+- time_id
+- campeonato_id
+
+opcoes
+- name - Vitória do Mandate, Empate, Vitória Visitante
+
+evento
+- name - Aposta múltipla na rodada de um campeonato
+
+evento_opcoes
+- evento_id
+- opcao_id
+
+game
+- date
+- home
+- guest
+
+game_odd_option
+- game_id
+- option_id
+- odd
+
+game_result
+- game_id
+- option_id
+- score
+
+aposta
+- evento_id
+- multiple
+- value
+
+aposta_game
+- aposta_id
+- game_id
+
+aposta_game_options
+- aposta_game_id
+- option_id
+
