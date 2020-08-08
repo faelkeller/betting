@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGameOptionSourceOdds extends Migration
+class CreateGameResults extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,14 @@ class CreateGameOptionSourceOdds extends Migration
      */
     public function up()
     {
-        Schema::create('game_option_source_odds', function (Blueprint $table) {
-            $table->integerIncrements('id');
+        Schema::create('game_results', function (Blueprint $table) {
+            $table->mediumIncrements('id');
             $table->unsignedMediumInteger('game_id');
             $table->unsignedSmallInteger('option_id');
-            $table->unsignedSmallInteger('odd_source_id');
-            $table->decimal('odd',6,2);
+            $table->string('score', 20);
             $table->timestamps();
             $table->foreign('game_id')->references('id')->on('games');
             $table->foreign('option_id')->references('id')->on('options');
-            $table->foreign('odd_source_id')->references('id')->on('odd_sources');
         });
     }
 
@@ -33,6 +31,6 @@ class CreateGameOptionSourceOdds extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('game_option_source_odds');
+        Schema::dropIfExists('game_results');
     }
 }
