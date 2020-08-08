@@ -12,10 +12,6 @@ campeonato
 times
 - name - Flamengo
 
-rodada
-- campeonato_id
-- name
-
 campeonato_times
 - time_id
 - campeonato_id
@@ -34,6 +30,14 @@ game
 - date
 - home
 - guest
+
+rodada
+- campeonato_id
+- name
+
+rodada_game
+- rodada_id
+- game_id
 
 game_odd_option
 - game_id
