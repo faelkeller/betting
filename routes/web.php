@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/random', function () {
+    $itemsRandom = \App\Random::getItemsBetting(9, 4);
+    dd($itemsRandom);
+});

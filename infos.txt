@@ -1,67 +1,22 @@
-100 x 2,37 = 237
+https://www.oddsportal.com/soccer/brazil/serie-a-2019/results/#/page/8/
 
-100 x 3,10 = 310
+rafae412_betting
+rafae412_betting
+Ax^Rz_r^7f,9
 
-200 = 1,19
+- Cadastrar rodada pelo campeonato_id
 
-200 = 1,55
+- Cadastrar jogos da rodada pelo id da rodada
+    - jogos e times
+    - jogos e rodadas
 
-campeonato
-- name - Campeonato Brasileiro 2020
+- Cadastrar odds dos jogos pelo id dos jogos
 
-times
-- name - Flamengo
+- Cadastrar aposta
 
-campeonato_times
-- time_id
-- campeonato_id
+- Cadastrar jogos da aposta
+    - Ligar opções pelo evento
 
-opcoes
-- name - Vitória do Mandate, Empate, Vitória Visitante
+- Cadastrar resultado do jogo
 
-evento
-- name - Aposta múltipla na rodada de um campeonato
-
-evento_opcoes
-- evento_id
-- opcao_id
-
-game
-- date
-- home
-- guest
-
-rodada
-- campeonato_id
-- name
-
-rodada_game
-- rodada_id
-- game_id
-
-odds_sources
-- name
-
-game_odd_option
-- game_id
-- option_id
-- odd
-
-game_result
-- game_id
-- option_id
-- score
-
-aposta
-- evento_id
-- multiple
-- value
-
-aposta_game
-- aposta_id
-- game_id
-
-aposta_game_options
-- aposta_game_id
-- option_id
 
