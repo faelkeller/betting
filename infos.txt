@@ -4,8 +4,6 @@ rafae412_betting
 rafae412_betting
 Ax^Rz_r^7f,9
 
-- Remover campo "competion_id" da tabela "rounds" e acrescentar a tabela "competition_round"
-
 - Renomear tabela "game_option_source_odds" para "odds"; remover campos "option_id" e "odd"; adicionar "event_id"
 
 - Criar tabela odd_option com os campos "odd_id", "option_id" e "odd"
