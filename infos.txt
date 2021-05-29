@@ -4,6 +4,20 @@ rafae412_betting
 rafae412_betting
 Ax^Rz_r^7f,9
 
+- Mudar tamanho do campo "slug" na tabela "teams" para 20
+
+- Acrescentar tipo de jogo (ex.: Futebol, volei)
+
+- Remover campo "competion_id" da tabela "rounds" e acrescentar a tabela "competition_round"
+
+- Renomear tabela "game_option_source_odds" para "odds"; remover campos "option_id" e "odd"; adicionar "event_id"
+
+- Criar tabela odd_option com os campos "odd_id", "option_id" e "odd"
+
+- Deletar tabela "round_game"
+
+- Criar campo "competition_round_id" na tabela "game"
+
 - Cadastrar rodada pelo campeonato_id
 
 - Cadastrar jogos da rodada pelo id da rodada
