@@ -4,8 +4,6 @@ rafae412_betting
 rafae412_betting
 Ax^Rz_r^7f,9
 
-- Criar campo "competition_round_id" na tabela "game"
-
 - Cadastrar rodada pelo campeonato_id
 
 - Cadastrar jogos da rodada pelo id da rodada
