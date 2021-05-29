@@ -4,8 +4,6 @@ rafae412_betting
 rafae412_betting
 Ax^Rz_r^7f,9
 
-- Deletar tabela "round_game"
-
 - Criar campo "competition_round_id" na tabela "game"
 
 - Cadastrar rodada pelo campeonato_id
