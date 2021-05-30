@@ -19,6 +19,8 @@ class CreateOddOption extends Migration
             $table->unsignedSmallInteger('option_id');
             $table->decimal('odd', 7, 2);
             $table->timestamps();
+            $table->foreign('odd_id')->references('id')->on('odds')->onDelete('cascade');
+            $table->foreign('option_id')->references('id')->on('options')->onDelete('cascade');
         });
     }
 
@@ -32,3 +34,4 @@ class CreateOddOption extends Migration
         Schema::dropIfExists('odd_option');
     }
 }
+
