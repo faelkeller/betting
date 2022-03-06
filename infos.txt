@@ -4,8 +4,6 @@ rafae412_betting
 rafae412_betting
 Ax^Rz_r^7f,9
 
-- Cadastrar rodada pelo campeonato_id
-
 - Cadastrar jogos da rodada pelo id da rodada
     - jogos e times
     - jogos e rodadas
